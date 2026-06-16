@@ -1,2 +1,48 @@
-# NurseGPT_Python_Script
-Repo created for storage of any NurseGPT related python script from data cleaning, analysis, extraction from multiple sources like PDF, Excel.
+# NurseGPT Python Scripts
+
+## Overview
+This repository contains Python scripts developed during the evaluation of **NurseGPT**, an AI-powered documentation tool being piloted at Brenda Strafford Foundation (BSF) Cambridge Manor, a long-term care facility in Calgary, Alberta.
+
+These scripts support data cleaning, preprocessing, and analysis of baseline observational and clinical data collected during the study.
+
+---
+
+## Scripts
+
+### 1. DataPreprocessing_TotalTime_Outliers_Filtered_Only_KN.ipynb
+**Purpose:** Cleans and preprocesses baseline observational charting data for statistical analysis in SPSS.
+
+**Key steps:**
+- Loads raw Excel data from the benchmarking sheet
+- Strips whitespace and forward fills identifier columns
+- Filters to KN-collected observations only
+- Converts date columns to string format for SPSS compatibility
+- Removes outliers in total charting time using a defined threshold
+- Exports cleaned CSV for SPSS analysis
+
+**Libraries:** `pandas`, `numpy`, `seaborn`, `matplotlib`
+
+---
+
+### 2. Patient_Pattern_Date_Extracted.ipynb
+**Purpose:** Extracts Created Date and Effective Date from PDF progress notes using regex pattern matching.
+
+**Key steps:**
+- Opens PDF progress notes using `pymupdf`
+- Applies regex patterns to extract date and timestamp fields
+- Structures extracted data into a pandas DataFrame
+- Flags rows with null values for review
+
+**Libraries:** `pandas`, `pymupdf`, `re`
+
+---
+
+## Notes
+- Raw data files are excluded from this repository to protect patient privacy
+- All scripts use placeholder file paths — update `INSERT_FILE_PATH` before running
+- This work is part of a mixed-methods evaluation study (BSF CLIQ Team, 2025–2026)
+
+---
+
+## Author
+KN1235 — Health Informatics Intern, Brenda Strafford Foundation
