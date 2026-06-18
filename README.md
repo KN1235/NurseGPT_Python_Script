@@ -39,7 +39,7 @@ These scripts support data cleaning, preprocessing, and analysis of baseline obs
 
 ## Notes
 - Raw data files are excluded from this repository to protect patient privacy
-- All scripts use placeholder file paths — update `INSERT_FILE_PATH` before running
+- All scripts use placeholder file paths (update `INSERT_FILE_PATH` before running)
 - This work is part of a mixed-methods evaluation study (BSF CLIQ Team, 2025–2026)
 
 ---
