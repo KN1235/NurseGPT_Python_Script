@@ -45,4 +45,4 @@ These scripts support data cleaning, preprocessing, and analysis of baseline obs
 ---
 
 ## Author
-KN1235 — Health Informatics Intern, Acute Care Alberta
+KN1235 — Research Evaluation Intern, Acute Care Alberta
