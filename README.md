@@ -25,7 +25,7 @@ These scripts support data cleaning, preprocessing, and analysis of baseline obs
 ---
 
 ### 2. Patient_Pattern_Date_Extracted.ipynb
-**Purpose:** Extracts Created Date and Effective Date from PDF progress notes using regex pattern matching.
+**Purpose:** Extracts Created Date and Effective Date from PDF progress notes using regex pattern matching for nurses charting's pattern analysis (spread across shifts versus lump at the end of shift)
 
 **Key steps:**
 - Opens PDF progress notes using `pymupdf`
@@ -40,7 +40,7 @@ These scripts support data cleaning, preprocessing, and analysis of baseline obs
 ## Notes
 - Raw data files are excluded from this repository to protect patient privacy
 - All scripts use placeholder file paths (update `INSERT_FILE_PATH` before running)
-- This work is part of a mixed-methods evaluation study (BSF CLIQ Team, 2025–2026)
+- This work is part of a mixed-methods evaluation study (Acute Care Alberta Evaluation Team, 2025–2026)
 
 ---
 
