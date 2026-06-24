@@ -37,6 +37,21 @@ These scripts support data cleaning, preprocessing, and analysis of baseline obs
 
 ---
 
+### 3. NurseGPT_WER_Evaluation_Script.ipynb
+**Purpose:** Evaluate NurseGPT transcription accuracy in sandbox environment before full deployment in Care Neighborhood by computing Word Error Rate between BSF progress notes (reference) and NurseGPT transcripts (hypothesis) across Green, Yellow, and Red test case tiers.
+
+**Key steps:**
+- Load and preprocesses reference and hypothesis diagnoses
+- Applies text normalization (contractions, number-to-word conversion, whitespace removal, time formatting, etc.)
+- Merge NurseGPT transcripts with BSF progress notes by Page Number ID
+- Compute WER metrics using the `jiwer` library
+- Outputs a scored DataFrame with error counts per test case and export to CSV files for analysis
+- For more information on workflow, please visit the following link: [NurseGPT WER Benchmark Workflow Diagram](https://app.mural.co/t/khuongnguyen8881/m/khuongnguyen8881/1774901102904/4617abf48d2d21e090bcb665a137f0a896ec5b0c)
+
+**Libraries:** `pandas`, `jiwer`, `re`
+
+---
+
 ## Notes
 - Raw data files are excluded from this repository to protect patient privacy
 - All scripts use placeholder file paths (update `INSERT_FILE_PATH` before running)
